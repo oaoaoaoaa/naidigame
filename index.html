@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		.bg {
+			background-color: black;
+		}
+		.bgw {
+			background-color: #518db0;
+		}
+		.meme{
+			background-size: 100% 100%;
+			transition: 0.5s;
+		}
+		.treasure{
+			background-size: 100% 100%;
+			transition: 0.5s;
+		}
+		.bang{
+			background-size: 100% 100%;
+			transition: 0.5s;
+		}
+		.coin{
+			background-size: 100% 100%;
+			transition: 0.5s;
+		}
+		.lum{
+			background-size: 100% 100%;
+			transition: 0.5s;
+		}
+		.boxx{
+			display: none;
+			position: absolute;
+			background-color: red;
+			width: 800px;
+			height: 400px;
+			left:300px;
+			border-radius: 10px;
+			top:10px;
+			
+		}
+		.textlum{
+			position: absolute;
+			top:10px;
+			left:300px;
+			width: 800px;
+			height: 200px;
+			display: none;
+			background-color: #518db0;
+			border-radius: 10px;
+			
+
+		}
+		.maaai{
+			background-color: black;
+			transition: 0.5s;
+		}
+		.hilic{
+			text-align: center;
+			display: none; 
+			position: absolute;
+			left: 400px; 
+			top:100px;
+		}
+		
+	</style>
+</head>
+
+<body class="maaai">
+	<div class="boxx">	
+		<h1 style="text-align: center; margin-top: 30px">Ваше путешествие окончено...</h1>
+		
+	</div>
+	<div class="hilic" style="">
+			<img src="hili.png" style="height: 200px">
+			<h1>	Вас до смерти забил хиличурл </h1>
+	</div>
+	
+
+	<!-- это div-родитель -->
+	<div class="col-6 mx-auto main">
+		
+		<div class="text text-white text-center">
+			<h1 class="task">Найди Люмин или заработай 15 очков</h1>
+			<p class="task">У вас 10 ходов</p>
+			<h1>Очки: <span class="score">0</span> Ходы:  <span class="scr">0</span></h1> 
+		</div>
+
+		<!-- Дивы с нумерацией 1, 2, 3 и т.д. -->
+		<div class="row">
+			<div class="col-1 px-5 py-3  bgw text-center border">
+
+			</div>
+			<div class="col-1 px-5 py-3  bgw text-center border">
+				<h4>1</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bgw text-center border">
+				<h4>2</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bgw text-center border">
+				<h4>3</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bgw text-center border">
+				<h4>4</h4>
+			</div>
+			<div class="col-1 px-5  py-3 bgw text-center border">
+				<h4>5</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bgw text-center border">
+				<h4>6</h4>
+			</div>
+		</div>
+		<!--Линия А-->
+		<div class="row">
+			<div class="col-1 px-5 py-4 bgw text-center border">
+				<h4>A</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border coin">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border meme">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border treasure">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border meme">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border coin">
+				
+			</div>
+		</div>
+		<!--Линия B-->
+		<div class="row">
+			<div class="col-1  px-5 py-4 bgw text-center border">
+				<h4>B</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border meme">
+
+			</div>
+			<div class="col-1  px-5 py-4 bg border meme">
+			
+			</div>
+			<div class="col-1  px-5 py-4 bg border coin">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border meme">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bang bg border ">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border treasure">
+				
+			</div>
+		</div>
+		<!--Линия C-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  bgw text-center border">
+				<h4>C</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border treasure">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border meme">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border coin">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border meme">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border meme">
+				
+			</div>	
+		</div>
+		<!--Линия D-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  bgw text-center border">
+				<h4>D</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border coin">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border meme ">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border lum">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border meme">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border bang">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border meme">
+				
+			</div>
+		</div>
+		<!--Линия E-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  bgw text-center border">
+				<h4>E</h4>
+			</div>
+			<div class="col-1 px-5 py-4  bg border treasure">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border coin">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border meme">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border bang">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border meme">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border meme ">
+				
+			</div>
+		</div>
+		<!--Линия F-->
+		<div class="row">
+			<div class="col-1 px-5 py-4 bgw text-center border">
+				<h4>F</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border meme">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border treasure">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border meme">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border coin">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border bang">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border meme">
+				
+			</div>
+		</div>
+		
+	</div>
+	<div class="textlum text-white">
+			<h1 style="text-align: center;">Поздравляем, Вы нашли Люмин!	</h1>
+			<h1 style="text-align: center; ">100 очков+	</h1>
+		</div>
+	<script type="text/javascript">
+		// Есть treasure bang meme coin
+		let att = 10; 
+		document.querySelector(".scr").innerHTML = att;
+		let score = 0;
+		document.querySelector(".score").innerHTML = score;
+		let meme = document.querySelectorAll(".meme");
+		let treasure = document.querySelectorAll(".treasure");
+        let bang = document.querySelectorAll(".bang");
+        let coin = document.querySelectorAll(".coin");
+        let lum = document.querySelector(".lum");
+        let main = document.querySelector(".main");
+        let text = document.querySelector(".text");
+        let textlum = document.querySelector(".textlum");
+        let box = document.querySelector(".boxx");
+        let maaai = document.querySelector(".maaai");
+        let hilic = document.querySelector(".hilic");
+        for( let i=0; i<17; i=i+1){
+            meme[i].onclick = function(){
+                meme[i].style.backgroundImage = "url(mem.jpg)";
+                att=att-1;
+                document.querySelector(".scr").innerHTML = att;
+                if(att <= 0) {
+					main.style.display = "none";
+					box.style.display = "block";
+					
+				
+				}
+                
+                   
+            }
+        }
+        for( let i=0; i<5; i=i+1){
+            treasure[i].onclick = function(){
+                treasure[i].style.backgroundImage = "url(treasure.png)";
+                treasure[i].style.backgroundColor = "white";
+                score = score +2;
+                document.querySelector(".score").innerHTML = score;
+                att=att-1;
+                document.querySelector(".scr").innerHTML = att;
+                if(att <= 0) {
+					main.style.display = "none";
+					box.style.display = "block";
+					
+				
+				}
+                
+				
+                   
+            }
+        }
+        
+
+        for( let i=0; i<6; i=i+1){
+            bang[i].onclick = function(){
+                bang[i].style.backgroundImage = "url(hili.png)";
+                bang[i].style.backgroundColor = "red";
+                score = score -1;
+                document.querySelector(".score").innerHTML = score;
+                att=att-1;
+                document.querySelector(".scr").innerHTML = att;
+                if(score <= 0) {
+					main.style.display = "none";
+					box.style.display = "block";
+					hilic.style.display = "block";
+				
+				}
+				if(att <= 0) {
+					main.style.display = "none";
+					box.style.display = "block";
+					
+				
+				}
+
+                
+                   
+            }
+        }
+        for( let i=0; i<7; i=i+1){
+            coin[i].onclick = function(){
+                coin[i].style.backgroundImage = "url(mora.png)";
+                coin[i].style.backgroundColor = "white";
+                score = score +1;
+                document.querySelector(".score").innerHTML = score;
+                att=att-1;
+                document.querySelector(".scr").innerHTML = att;
+                if(att <= 0) {
+					main.style.display = "none";
+					box.style.display = "block";
+					
+				
+				}
+                   
+            }
+        }
+        lum.onclick = function(){
+        	lum.style.backgroundImage = "url(lumi.png)";
+        	lum.style.backgroundColor = "white";
+        	score = 100;
+        	document.querySelector(".score").innerHTML = score;
+        	
+        	textlum.style.display = "block";
+        	maaai.style.backgroundColor= "white";
+        }
+	</script>
+</body>
+</html>
+
+<script type="text/javascript">
+
+	
+
+</script>
